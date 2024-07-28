@@ -3,12 +3,17 @@
 @use "../abstracts/mixin" as *;
 
 .home {
+  width: 100%;
   #hero-section {
     height: 100vh;
-    background: url("../../img/glamify-home-bg.jpg");
+    // background: url("../../../assets/img/glamify-home-bg.jpg");
+    // background: url("https://static.thcdn.com/images/xlarge/webp/widgets/95-en/18/original-0701_367795_LF_AH_July_Batching_NonPriority_Shot11_1920x600-132318.jpeg");
+    // background: url("https://static.thcdn.com/images/xlarge/webp/widgets/95-en/39/original-0626_367761_LF_AH_July_Batching_Priority_Shot7_1920x600-030239.jpeg");
+    background: url("../../../assets/img/original-home.jpg");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
+    background-position: top right;
 
     .text {
       display: flex;
@@ -16,14 +21,17 @@
       justify-content: center;
       height: 100vh;
       margin-left: 130px;
+      color: #000;
 
       h1 {
-        font-size: 50px;
+        font-size: 70px;
         margin-bottom: 15px;
+        font-family: "Oooh Baby", cursive;
+        text-shadow: 1px 1px 5px #fa9a8c;
       }
 
       p {
-        font-size: 20px;
+        font-size: 18px;
       }
 
       &.animate-slide-in {
@@ -44,6 +52,7 @@
     padding-left: calc((100% - 1300px) / 2);
     padding-right: calc((100% - 1300px) / 2);
     background: url("https://preview.colorlib.com/theme/makeupartist/img/about/about-bg.png");
+    // background: url("https://i.pinimg.com/564x/9e/2b/f5/9e2bf56f8e38f9271cac92e73385f7af.jpg");
     background-repeat: no-repeat;
     .text {
       width: 550px;
@@ -65,12 +74,221 @@
       height: 600px;
       object-fit: cover;
       border-radius: 2px 100px / 120px;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-      transition: all 0.2s linear ;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      transition: all 0.2s linear;
     }
-    img:hover{
-       transform: scale(1.02);
-        box-shadow: rgba(50, 50, 93, 0.5) 0px 30px 60px -12px, rgba(0, 0, 0, 0.6) 0px 18px 36px -18px;
+    img:hover {
+      transform: scale(1.02);
+      box-shadow: rgba(50, 50, 93, 0.5) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.6) 0px 18px 36px -18px;
+    }
+  }
+  #best-services {
+    margin-top: 150px;
+    h2 {
+      font-size: 20px;
+      color: #fa9a8c;
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+    p {
+      font-size: 70px;
+      font-family: "Oooh Baby", cursive;
+      line-height: 125px;
+      text-align: center;
+    }
+    .box-container {
+      padding: 50px 100px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 70px;
+      background: url("	https://preview.colorlib.com/theme/makeupartist/img/services/services-bg.png");
+      background-repeat: no-repeat;
+      .box {
+        position: relative;
+
+        img {
+          width: 280px;
+          height: 350px;
+          object-fit: cover;
+        }
+
+        .img-b {
+          margin-top: 74px;
+        }
+
+        .details {
+          padding: 10px;
+          position: absolute;
+          width: 280px;
+          left: 0;
+          top: 0px;
+          transition: all 0.3s linear;
+
+          h5 {
+            font-size: 20px;
+            font-weight: 500;
+            color: #200204;
+            margin-bottom: 5px;
+          }
+
+          span {
+            color: #fa9a8c;
+            font-weight: 500;
+          }
+        }
+
+        .details-t {
+          position: absolute;
+          width: 280px;
+          left: 0;
+          top: 350px;
+          transition: all 0.3s linear;
+
+          h5 {
+            font-size: 20px;
+            font-weight: 500;
+            color: #200204;
+            margin-bottom: 5px;
+          }
+
+          span {
+            color: #fa9a8c;
+            font-weight: 500;
+          }
+        }
+
+        &:hover > .details {
+          top: 50px;
+          background-color: #fff;
+          padding: 20px 10px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        &:hover > .details-t {
+          top: 260px;
+        }
+      }
+    }
+  }
+  #gallery {
+    margin: 100px 0;
+
+    h2 {
+      text-align: left;
+      margin-left: 50px;
+      font-size: 40px;
+      margin-bottom: 20px;
+      font-family: "Oooh Baby", cursive;
+      color: #fa9a8c;
+      // background: url("https://preview.colorlib.com/theme/makeupartist/img/icon/s-bg-r.png");
+      // background-repeat: no-repeat;
+      // height: 100px;
+    }
+
+    .image-boxes {
+      display: grid;
+      width: 100%;
+      grid-template-areas:
+        "first second third third fourth fifth"
+        "first sixth third third seventh seventh";
+      gap: 20px;
+      padding: 20px 50px;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.3s linear;
+      }
+
+      .img1 {
+        grid-area: first;
+        height: 520px;
+      }
+      .img2 {
+        grid-area: second;
+        height: 250px;
+      }
+      .img3 {
+        grid-area: third;
+        height: 520px;
+      }
+      .img4 {
+        grid-area: fourth;
+        height: 250px;
+      }
+      .img5 {
+        grid-area: fifth;
+        height: 250px;
+      }
+      .img6 {
+        grid-area: sixth;
+        height: 250px;
+      }
+      .img7 {
+        grid-area: seventh;
+        height: 250px;
+      }
+    }
+  }
+  #products {
+    @include flexmain($flex-direction: column);
+    background: rgb(248, 242, 242);
+    padding: 20px 0 70px;
+    h2 {
+      font-size: 20px;
+      color: #fa9a8c;
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .bp-heading {
+      font-size: 70px;
+      font-family: "Oooh Baby", cursive;
+      line-height: 50px;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+      div {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 20px;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 3px;
+        text-align: center;
+        img {
+          width: 250px;
+        }
+        .category {
+          font-size: 13px;
+          color: rgb(136, 136, 136);
+        }
+        .price {
+          color: #fa9a8c;
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+      div:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transform: scale(1.05);
+      }
+    }
+    a {
+      color: #000;
+      padding: 50px 0 0;
+    }
+    hr {
+      width: 200px;
+      border: 1px solid #000;
     }
   }
 }

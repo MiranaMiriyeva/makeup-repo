@@ -6,8 +6,8 @@ header {
   @include flexmain($justify-content: space-between);
   padding: 20px 100px;
   max-height: 100px;
-  background: #815c48ac;
-  position: fixed;
+  // background: #f4bccb;
+  position: absolute;
   z-index: 2;
   width: 100%;
   .header-icon {
@@ -18,9 +18,11 @@ header {
     font-size: 25px;
     gap: 40px;
     a {
-      color: #fff;
+      color: #000;
+      font-weight: 700;
       position: relative;
-      text-shadow: 1px 1px 10px rgba(0, 0, 0);
+      // text-shadow: 1px 1px 10px rgba(0, 0, 0);
+      text-shadow: 1px 1px 5px #fa9a8c;
     }
     a::after {
       content: "";
@@ -30,7 +32,7 @@ header {
       display: block;
       left: 0;
       bottom: 0;
-      background: linear-gradient(to right, #fa9a8c, #f7b0a6);
+      background: black;
       transition: width 0.3s;
     }
     a:hover::after {
