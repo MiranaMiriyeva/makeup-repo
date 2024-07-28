@@ -1,0 +1,24 @@
+
+%buttons {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #FA9A8C, #F7B0A6);
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+%buttons-before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  transition: all 0.5s ease;
+}

@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/extends" as *;
+@use "../abstracts/mixin" as *;
+
+header {
+  @include flexmain($justify-content: space-between);
+  padding: 20px 100px;
+  max-height: 100px;
+  background: #815c48ac;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  .header-icon {
+    width: 200px;
+  }
+  .links {
+    @include flexmain;
+    font-size: 25px;
+    gap: 40px;
+    a {
+      color: #fff;
+      position: relative;
+      text-shadow: 1px 1px 10px rgba(0, 0, 0);
+    }
+    a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      display: block;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right, #fa9a8c, #f7b0a6);
+      transition: width 0.3s;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+  }
+}

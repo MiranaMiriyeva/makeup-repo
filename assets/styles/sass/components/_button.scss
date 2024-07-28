@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/extends" as *;
+@use "../abstracts/mixin" as *;
+
+header button {
+  @extend %buttons;
+}
+header button::before {
+  @extend %buttons-before;
+}
+header button:hover::before {
+  left: 100%;
+}
+header button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.home #about-artist .text button {
+  @extend %buttons;
+  margin-top: 20px;
+}
+.home #about-artist .text button::before {
+  @extend %buttons-before;
+}
+.home #about-artist .text button:hover::before {
+  left: 100%;
+}
+.home #about-artist .text button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}

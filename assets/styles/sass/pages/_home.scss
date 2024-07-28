@@ -1,0 +1,83 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/extends" as *;
+@use "../abstracts/mixin" as *;
+
+.home {
+  #hero-section {
+    height: 100vh;
+    background: url("../../img/glamify-home-bg.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      margin-left: 130px;
+
+      h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      &.animate-slide-in {
+        opacity: 0;
+        transform: translateX(-10%);
+        animation: slide-in 1s forwards;
+      }
+    }
+  }
+  #about-artist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    gap: 50px;
+    padding-left: calc((100% - 1300px) / 2);
+    padding-right: calc((100% - 1300px) / 2);
+    background: url("https://preview.colorlib.com/theme/makeupartist/img/about/about-bg.png");
+    background-repeat: no-repeat;
+    .text {
+      width: 550px;
+      h2 {
+        font-family: "Oooh Baby", cursive;
+        font-size: 65px;
+        font-weight: 200;
+      }
+      p {
+        font-family: "Spartan", sans-serif;
+        color: #444444;
+        font-weight: 400;
+        line-height: 35px;
+        margin: 0 0 15px 0;
+      }
+    }
+    img {
+      width: 500px;
+      height: 600px;
+      object-fit: cover;
+      border-radius: 2px 100px / 120px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      transition: all 0.2s linear ;
+    }
+    img:hover{
+       transform: scale(1.02);
+        box-shadow: rgba(50, 50, 93, 0.5) 0px 30px 60px -12px, rgba(0, 0, 0, 0.6) 0px 18px 36px -18px;
+    }
+  }
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
