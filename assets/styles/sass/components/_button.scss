@@ -29,3 +29,22 @@ header button:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
+.home #contact .right-side{
+  .book{
+    @extend %buttons;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5) !important;
+   
+   }
+   .book::before{
+  
+      @extend %buttons-before;
+     
+   }
+}
+.home #contact .right-side .book:hover::before {
+  left: 100%;
+}
+.home #contact .right-side .book:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}

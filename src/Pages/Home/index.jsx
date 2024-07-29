@@ -1,3 +1,6 @@
+import { faFacebook, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faHeart, faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -7,7 +10,7 @@ const Home = () => {
       <section id="hero-section">
         <div className="text animate-slide-in">
           <h1>Discover Your Beauty</h1>
-          <p>Pamper Yourself with Our Professional Services and  </p>
+          <p>Pamper Yourself with Our Professional Services and </p>
           <p>High-Quality Products.</p>
         </div>
       </section>
@@ -127,7 +130,7 @@ const Home = () => {
         <h2>BEAUTY PRODUCTS</h2>
         <p className="bp-heading">Beauty products</p>
         <div className="container">
-          <div>
+          <div className="box">
             <img
               src="https://www.kikocosmetics.com/_next/image/?url=https%3A%2F%2Fassets.joqhl8w6.on-eva.io%2Fblob%2Fc4d9808f-8a46-4a9f-9a44-2750cee4b9f1&w=384&q=75"
               alt=""
@@ -135,9 +138,13 @@ const Home = () => {
             <p className="category">Lipstick</p>
             <p className="name">KIKO Creamy Lipstick</p>
             <p className="price">$25.0</p>
+            <div className="icons">
+            <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
+            <FontAwesomeIcon className="icon" icon={faHeart} /> 
+            </div>
           </div>
 
-          <div>
+          <div className="box">
             <img
               src="https://www.kikocosmetics.com/_next/image/?url=https%3A%2F%2Fassets.joqhl8w6.on-eva.io%2Fblob%2F36029597-4f47-1282-5aae-ac6a851dcff6&w=384&q=75"
               alt=""
@@ -145,9 +152,13 @@ const Home = () => {
             <p className="category">Palette</p>
             <p className="name">KIKO Eyeshadow Plaette</p>
             <p className="price">$20.0</p>
+            <div className="icons">
+            <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
+            <FontAwesomeIcon className="icon" icon={faHeart} /> 
+            </div>
           </div>
 
-          <div>
+          <div className="box">
             <img
               src="https://www.kikocosmetics.com/_next/image/?url=https%3A%2F%2Fassets.joqhl8w6.on-eva.io%2Fblob%2F18c0d6b8-7ae7-4cfe-8066-4c80ac73e944&w=384&q=75"
               alt=""
@@ -155,9 +166,13 @@ const Home = () => {
             <p className="category">Mascara</p>
             <p className="name">KIKO Volume Mascara</p>
             <p className="price">$18.0</p>
+            <div className="icons">
+            <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
+            <FontAwesomeIcon className="icon" icon={faHeart} /> 
+            </div>
           </div>
 
-          <div>
+          <div className="box">
             <img
               src="https://www.kikocosmetics.com/_next/image/?url=https%3A%2F%2Fassets.joqhl8w6.on-eva.io%2Fblob%2Fbe1fa520-7b5f-325c-64fe-8be7b643d95f&w=384&q=75"
               alt=""
@@ -165,11 +180,98 @@ const Home = () => {
             <p className="category">Foundation</p>
             <p className="name">KIKO Powder Foundation</p>
             <p className="price">$20.0</p>
+            <div className="icons">
+            <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
+            <FontAwesomeIcon className="icon" icon={faHeart} /> 
+            </div>
           </div>
         </div>
-        <Link>VIEW ALL PRODUCTS</Link>
+        <Link to={"/shop"}>VIEW ALL PRODUCTS</Link>
         <hr />
       </section>
+      <section id="tips">
+        <h2>MAKEUP ARTIST TIPS</h2>
+        <p className="tips-heading">Makeup artist tips</p>
+        <div className="tips-container">
+          <Link className="box"
+            to={
+              "https://www.youtube.com/watch?v=H01k32xOb9s&pp=ygULbWFrZXVwIHRpcHM%3D"
+            }
+          >
+            <img
+              src="https://i.pinimg.com/564x/c6/09/a8/c609a854e42f5abcd6b28b1e121eb363.jpg"
+              alt=""
+            />
+            <h4>Tips From Makeup Artists You’ve Never Heard</h4>
+            <div>
+              <div className="name">Rosie Chapman </div>|
+              <div className="date">Jul 5, 2024</div>
+            </div>
+
+            <FontAwesomeIcon className="yt-icon" icon={faYoutube} />
+          </Link>
+          <Link className="box"
+            to={
+              "https://www.youtube.com/watch?v=H01k32xOb9s&pp=ygULbWFrZXVwIHRpcHM%3D"
+            }
+          >
+            <img
+              src="https://i.pinimg.com/564x/e4/f2/92/e4f292a5e60b32823fe9d74d23eaa40c.jpg"
+              alt=""
+            />
+            <h4>Everything I Learned From A Professional Makeup Artist</h4>
+            <div>
+              <div className="name">Rosie Chapman</div>|
+              <div className="date">Jul 10, 2024</div>
+            </div>
+
+            <FontAwesomeIcon className="yt-icon" icon={faYoutube} />
+          </Link>
+
+          <Link className="box"
+            to={
+              "https://www.youtube.com/watch?v=H01k32xOb9s&pp=ygULbWFrZXVwIHRpcHM%3D"
+            }
+          >
+            <img
+              src="https://i.pinimg.com/564x/e4/0d/64/e40d64037ff9995be5608d4e11d389f0.jpg"
+              alt=""
+            />
+            <h4>10 Makeup-Artist Tips That Surprised (and Delighted) Us</h4>
+            <div>
+              <div className="name">Rosie Chapman</div>|
+              <div className="date">Jul 15, 2024</div>
+            </div>
+
+            <FontAwesomeIcon className="yt-icon" icon={faYoutube} />
+          </Link>
+        </div>
+      </section>
+      <section id="contact">
+        <div className="left-side">
+          <h2>BOOK ONLINE FOR</h2>
+          <span>20% DISCOUNT</span>
+        </div>
+        <div className="right-side">
+          <h2>GET A QUOTE</h2>
+          <form>
+            <div>
+              <input type="text" placeholder="Name" required />
+              <input type="number" placeholder="Phone number"  required/>
+            </div>
+            <div>
+              <input type="email" placeholder="Email" required />
+              <select required> 
+                <option value="Makeup">Makeup</option>
+                <option value="Hair">Hair</option>
+                <option value="Other">Other</option>
+            </select>
+            </div>
+            <textarea placeholder="Your message"></textarea>
+          </form>
+          <button className="book">Book</button>
+        </div>
+    </section>
     </div>
   );
 };

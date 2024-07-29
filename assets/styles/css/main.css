@@ -14,7 +14,7 @@ ul, li {
   list-style: none;
 }
 
-header button, .home #about-artist .text button {
+header button, .home #about-artist .text button, .home #contact .right-side .book {
   border-radius: 20px;
   padding: 10px 20px;
   background: linear-gradient(to right, #FA9A8C, #F7B0A6);
@@ -28,7 +28,7 @@ header button, .home #about-artist .text button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header button::before, .home #about-artist .text button::before {
+header button::before, .home #about-artist .text button::before, .home #contact .right-side .book::before {
   content: "";
   position: absolute;
   top: 0;
@@ -37,6 +37,21 @@ header button::before, .home #about-artist .text button::before {
   height: 100%;
   background: rgba(255, 255, 255, 0.15);
   transition: all 0.5s ease;
+}
+
+.home #tips h2, .home #products h2, .home #best-services h2 {
+  font-size: 20px;
+  color: #fa9a8c;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.home #tips .tips-heading, .home #products .bp-heading, .home #best-services p {
+  font-size: 70px;
+  font-family: "Oooh Baby", cursive;
+  line-height: 100px;
+  text-align: center;
 }
 
 header button:hover::before {
@@ -61,7 +76,19 @@ header button:hover {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-header button, .home #about-artist .text button {
+.home #contact .right-side .book {
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5) !important;
+}
+.home #contact .right-side .book:hover::before {
+  left: 100%;
+}
+
+.home #contact .right-side .book:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+header button, .home #about-artist .text button, .home #contact .right-side .book {
   border-radius: 20px;
   padding: 10px 20px;
   background: linear-gradient(to right, #FA9A8C, #F7B0A6);
@@ -75,7 +102,7 @@ header button, .home #about-artist .text button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header button::before, .home #about-artist .text button::before {
+header button::before, .home #about-artist .text button::before, .home #contact .right-side .book::before {
   content: "";
   position: absolute;
   top: 0;
@@ -84,6 +111,21 @@ header button::before, .home #about-artist .text button::before {
   height: 100%;
   background: rgba(255, 255, 255, 0.15);
   transition: all 0.5s ease;
+}
+
+.home #tips h2, .home #products h2, .home #best-services h2 {
+  font-size: 20px;
+  color: #fa9a8c;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.home #tips .tips-heading, .home #products .bp-heading, .home #best-services p {
+  font-size: 70px;
+  font-family: "Oooh Baby", cursive;
+  line-height: 100px;
+  text-align: center;
 }
 
 .shopping-icon {
@@ -100,7 +142,7 @@ header button::before, .home #about-artist .text button::before {
   transform: scale(1.1);
 }
 
-header button, .home #about-artist .text button {
+header button, .home #about-artist .text button, .home #contact .right-side .book {
   border-radius: 20px;
   padding: 10px 20px;
   background: linear-gradient(to right, #FA9A8C, #F7B0A6);
@@ -114,7 +156,7 @@ header button, .home #about-artist .text button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header button::before, .home #about-artist .text button::before {
+header button::before, .home #about-artist .text button::before, .home #contact .right-side .book::before {
   content: "";
   position: absolute;
   top: 0;
@@ -123,6 +165,21 @@ header button::before, .home #about-artist .text button::before {
   height: 100%;
   background: rgba(255, 255, 255, 0.15);
   transition: all 0.5s ease;
+}
+
+.home #tips h2, .home #products h2, .home #best-services h2 {
+  font-size: 20px;
+  color: #fa9a8c;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.home #tips .tips-heading, .home #products .bp-heading, .home #best-services p {
+  font-size: 70px;
+  font-family: "Oooh Baby", cursive;
+  line-height: 100px;
+  text-align: center;
 }
 
 header {
@@ -168,7 +225,7 @@ header .links a:hover::after {
   width: 100%;
 }
 
-header button, .home #about-artist .text button {
+header button, .home #about-artist .text button, .home #contact .right-side .book {
   border-radius: 20px;
   padding: 10px 20px;
   background: linear-gradient(to right, #FA9A8C, #F7B0A6);
@@ -182,7 +239,7 @@ header button, .home #about-artist .text button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header button::before, .home #about-artist .text button::before {
+header button::before, .home #about-artist .text button::before, .home #contact .right-side .book::before {
   content: "";
   position: absolute;
   top: 0;
@@ -193,7 +250,122 @@ header button::before, .home #about-artist .text button::before {
   transition: all 0.5s ease;
 }
 
-header button, .home #about-artist .text button {
+.home #tips h2, .home #products h2, .home #best-services h2 {
+  font-size: 20px;
+  color: #fa9a8c;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.home #tips .tips-heading, .home #products .bp-heading, .home #best-services p {
+  font-size: 70px;
+  font-family: "Oooh Baby", cursive;
+  line-height: 100px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #F8F2F2;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #fa9a8c;
+  width: 100%;
+  height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #333;
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #000;
+  padding-left: 7px;
+}
+
+.footer-col .social-links {
+  display: flex;
+}
+
+.footer-col .social-links a {
+  color: #fa9a8c;
+  background-color: #fff;
+  border: 1px solid #fa9a8c;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 10px 10px 0;
+  line-height: 40px;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #fff;
+  background-color: #fa9a8c;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+header button, .home #about-artist .text button, .home #contact .right-side .book {
   border-radius: 20px;
   padding: 10px 20px;
   background: linear-gradient(to right, #FA9A8C, #F7B0A6);
@@ -207,7 +379,7 @@ header button, .home #about-artist .text button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header button::before, .home #about-artist .text button::before {
+header button::before, .home #about-artist .text button::before, .home #contact .right-side .book::before {
   content: "";
   position: absolute;
   top: 0;
@@ -216,6 +388,21 @@ header button::before, .home #about-artist .text button::before {
   height: 100%;
   background: rgba(255, 255, 255, 0.15);
   transition: all 0.5s ease;
+}
+
+.home #best-services h2, .home #products h2, .home #tips h2 {
+  font-size: 20px;
+  color: #fa9a8c;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.home #best-services p, .home #products .bp-heading, .home #tips .tips-heading {
+  font-size: 70px;
+  font-family: "Oooh Baby", cursive;
+  line-height: 100px;
+  text-align: center;
 }
 
 .home {
@@ -293,19 +480,6 @@ header button::before, .home #about-artist .text button::before {
 }
 .home #best-services {
   margin-top: 150px;
-}
-.home #best-services h2 {
-  font-size: 20px;
-  color: #fa9a8c;
-  font-weight: 500;
-  letter-spacing: 4px;
-  text-align: center;
-}
-.home #best-services p {
-  font-size: 70px;
-  font-family: "Oooh Baby", cursive;
-  line-height: 125px;
-  text-align: center;
 }
 .home #best-services .box-container {
   padding: 50px 100px;
@@ -430,18 +604,10 @@ header button::before, .home #about-artist .text button::before {
   padding: 20px 0 70px;
 }
 .home #products h2 {
-  font-size: 20px;
-  color: #fa9a8c;
-  font-weight: 500;
-  letter-spacing: 4px;
-  text-align: center;
   padding: 20px 0;
 }
 .home #products .bp-heading {
-  font-size: 70px;
-  font-family: "Oooh Baby", cursive;
-  line-height: 50px;
-  text-align: center;
+  line-height: 30px !important;
 }
 .home #products .container {
   display: grid;
@@ -449,28 +615,56 @@ header button::before, .home #about-artist .text button::before {
   gap: 30px;
   margin-top: 50px;
 }
-.home #products .container div {
+.home #products .container .box {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 20px;
   transition: all 0.3s linear;
+  position: relative !important;
   cursor: pointer;
   background-color: #fff;
   border-radius: 3px;
   text-align: center;
 }
-.home #products .container div img {
+.home #products .container .box img {
   width: 250px;
 }
-.home #products .container div .category {
+.home #products .container .box .category {
   font-size: 13px;
   color: rgb(136, 136, 136);
 }
-.home #products .container div .price {
+.home #products .container .box .price {
   color: #fa9a8c;
   font-size: 13px;
   font-weight: 500;
 }
-.home #products .container div:hover {
+.home #products .container .box .icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 10px;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+.home #products .container .box .icons .icon {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fa9a8c;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  color: #fa9a8c;
+  transition: all 0.5s linear;
+}
+.home #products .container .box .icons .icon:hover {
+  background-color: #fa9a8c;
+  color: #fff;
+  transform: rotate(360deg);
+}
+.home #products .container .box:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transform: scale(1.05);
 }
@@ -482,6 +676,125 @@ header button::before, .home #about-artist .text button::before {
   width: 200px;
   border: 1px solid #000;
 }
+.home #tips {
+  margin: 50px 0;
+}
+.home #tips .tips-heading {
+  line-height: 70px !important;
+}
+.home #tips .tips-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px 70px;
+  gap: 30px;
+}
+.home #tips .tips-container .box {
+  position: relative;
+  max-width: 450px;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #000;
+  cursor: pointer;
+}
+.home #tips .tips-container .box img {
+  max-width: 400px;
+}
+.home #tips .tips-container .box h4 {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.home #tips .tips-container .box div {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+}
+.home #tips .tips-container .box div .date {
+  color: #888888;
+}
+.home #tips .tips-container .box .yt-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  color: red;
+  transition: all 0.3s linear;
+}
+@keyframes growShrink {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+.home #tips .tips-container .box:hover .yt-icon {
+  animation: growShrink 2s ease-in-out infinite;
+}
+.home #tips .tips-container .box:hover {
+  box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 2px;
+}
+.home #contact {
+  width: 100%;
+  margin: 0 auto;
+  height: 80vh;
+  background: url("https://static.vecteezy.com/system/resources/previews/033/250/391/large_2x/pink-lipstick-in-a-fluffy-pink-cloud-with-glitter-on-a-pink-background-makeup-product-generated-by-artificial-intelligence-free-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home #contact .left-side {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 1px 1px 5px #fa9a8c;
+}
+.home #contact .left-side h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.home #contact .left-side span {
+  font-size: 50px;
+  font-family: "Oooh Baby", cursive;
+  font-weight: 800;
+}
+.home #contact .right-side {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 100px;
+}
+.home #contact .right-side h2 {
+  font-size: 30px;
+  text-shadow: 1px 1px 5px #fa9a8c;
+}
+.home #contact .right-side form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.home #contact .right-side form div {
+  display: flex;
+  gap: 20px;
+}
+.home #contact .right-side form div input,
+.home #contact .right-side form div select {
+  width: 250px;
+  padding: 20px;
+  border: none;
+  font-size: 16px;
+}
+.home #contact .right-side form textarea {
+  padding: 10px 20px;
+  border: none;
+  height: 100px;
+  font-size: 16px;
+}
 
 @keyframes slide-in {
   to {
@@ -489,7 +802,7 @@ header button::before, .home #about-artist .text button::before {
     transform: translateX(0);
   }
 }
-header button, .home #about-artist .text button {
+header button, .home #about-artist .text button, .home #contact .right-side .book {
   border-radius: 20px;
   padding: 10px 20px;
   background: linear-gradient(to right, #FA9A8C, #F7B0A6);
@@ -503,7 +816,7 @@ header button, .home #about-artist .text button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header button::before, .home #about-artist .text button::before {
+header button::before, .home #about-artist .text button::before, .home #contact .right-side .book::before {
   content: "";
   position: absolute;
   top: 0;
@@ -514,7 +827,22 @@ header button::before, .home #about-artist .text button::before {
   transition: all 0.5s ease;
 }
 
-header button, .home #about-artist .text button {
+.home #best-services h2, .home #products h2, .home #tips h2 {
+  font-size: 20px;
+  color: #fa9a8c;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.home #best-services p, .home #products .bp-heading, .home #tips .tips-heading {
+  font-size: 70px;
+  font-family: "Oooh Baby", cursive;
+  line-height: 100px;
+  text-align: center;
+}
+
+header button, .home #about-artist .text button, .home #contact .right-side .book {
   border-radius: 20px;
   padding: 10px 20px;
   background: linear-gradient(to right, #FA9A8C, #F7B0A6);
@@ -528,7 +856,7 @@ header button, .home #about-artist .text button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header button::before, .home #about-artist .text button::before {
+header button::before, .home #about-artist .text button::before, .home #contact .right-side .book::before {
   content: "";
   position: absolute;
   top: 0;
@@ -537,6 +865,21 @@ header button::before, .home #about-artist .text button::before {
   height: 100%;
   background: rgba(255, 255, 255, 0.15);
   transition: all 0.5s ease;
+}
+
+.home #best-services h2, .home #products h2, .home #tips h2 {
+  font-size: 20px;
+  color: #fa9a8c;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.home #best-services p, .home #products .bp-heading, .home #tips .tips-heading {
+  font-size: 70px;
+  font-family: "Oooh Baby", cursive;
+  line-height: 100px;
+  text-align: center;
 }
 
 .shop {
@@ -578,7 +921,7 @@ header button::before, .home #about-artist .text button::before {
   color: #333;
 }
 
-header button, .home #about-artist .text button {
+header button, .home #about-artist .text button, .home #contact .right-side .book {
   border-radius: 20px;
   padding: 10px 20px;
   background: linear-gradient(to right, #FA9A8C, #F7B0A6);
@@ -592,7 +935,7 @@ header button, .home #about-artist .text button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header button::before, .home #about-artist .text button::before {
+header button::before, .home #about-artist .text button::before, .home #contact .right-side .book::before {
   content: "";
   position: absolute;
   top: 0;
@@ -601,4 +944,19 @@ header button::before, .home #about-artist .text button::before {
   height: 100%;
   background: rgba(255, 255, 255, 0.15);
   transition: all 0.5s ease;
+}
+
+.home #best-services h2, .home #products h2, .home #tips h2 {
+  font-size: 20px;
+  color: #fa9a8c;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.home #best-services p, .home #products .bp-heading, .home #tips .tips-heading {
+  font-size: 70px;
+  font-family: "Oooh Baby", cursive;
+  line-height: 100px;
+  text-align: center;
 }

@@ -87,17 +87,10 @@
   #best-services {
     margin-top: 150px;
     h2 {
-      font-size: 20px;
-      color: #fa9a8c;
-      font-weight: 500;
-      letter-spacing: 4px;
-      text-align: center;
+      @extend %homeh2;
     }
     p {
-      font-size: 70px;
-      font-family: "Oooh Baby", cursive;
-      line-height: 125px;
-      text-align: center;
+      @extend %homep;
     }
     .box-container {
       padding: 50px 100px;
@@ -238,28 +231,23 @@
     background: rgb(248, 242, 242);
     padding: 20px 0 70px;
     h2 {
-      font-size: 20px;
-      color: #fa9a8c;
-      font-weight: 500;
-      letter-spacing: 4px;
-      text-align: center;
+      @extend %homeh2;
       padding: 20px 0;
     }
     .bp-heading {
-      font-size: 70px;
-      font-family: "Oooh Baby", cursive;
-      line-height: 50px;
-      text-align: center;
+      @extend %homep;
+      line-height: 30px !important;
     }
     .container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 30px;
       margin-top: 50px;
-      div {
+      .box {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         padding: 20px;
         transition: all 0.3s linear;
+        position: relative !important;
         cursor: pointer;
         background-color: #fff;
         border-radius: 3px;
@@ -276,8 +264,36 @@
           font-size: 13px;
           font-weight: 500;
         }
+        .icons {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          gap: 10px;
+          top: 10px;
+          right: 10px;
+          z-index: 2;
+          .icon {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fa9a8c;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            font-size: 10px;
+            color: #fa9a8c;
+            transition: all .5s linear;
+        
+          }
+          .icon:hover{
+            background-color: #fa9a8c;
+            color: #fff;
+            transform: rotate(360deg);
+          }
+        }
       }
-      div:hover {
+      .box:hover {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         transform: scale(1.05);
       }
@@ -289,6 +305,131 @@
     hr {
       width: 200px;
       border: 1px solid #000;
+    }
+  }
+
+  #tips {
+    margin: 50px 0;
+    h2 {
+      @extend %homeh2;
+    }
+    .tips-heading {
+      @extend %homep;
+      line-height: 70px !important;
+    }
+    .tips-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 40px 70px;
+      gap: 30px;
+      .box {
+        position: relative;
+        max-width: 450px;
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        color: #000;
+        cursor: pointer;
+        img {
+          max-width: 400px;
+        }
+        h4 {
+          font-size: 24px;
+          margin: 20px 0;
+          font-weight: 400;
+        }
+        div {
+          display: flex;
+          gap: 15px;
+          font-size: 13px;
+          .date {
+            color: #888888;
+          }
+        }
+        .yt-icon {
+          position: absolute;
+          top: 30px;
+          right: 30px;
+          font-size: 30px;
+          color: red;
+          transition: all 0.3s linear;
+        }
+      }
+      @keyframes growShrink {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+      }
+
+      .box:hover .yt-icon {
+        animation: growShrink 2s ease-in-out infinite;
+      }
+      .box:hover {
+        box-shadow: rgba(50, 50, 50, 0.2) 0px 2px 8px 2px;
+      }
+    }
+  }
+
+  #contact {
+    width: 100%;
+    margin: 0 auto;
+    height: 80vh;
+    background: url("https://static.vecteezy.com/system/resources/previews/033/250/391/large_2x/pink-lipstick-in-a-fluffy-pink-cloud-with-glitter-on-a-pink-background-makeup-product-generated-by-artificial-intelligence-free-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    // background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .left-side {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-shadow: 1px 1px 5px #fa9a8c;
+      h2 {
+        font-size: 50px;
+        font-weight: 700;
+      }
+      span {
+        font-size: 50px;
+        font-family: "Oooh Baby", cursive;
+        font-weight: 800;
+      }
+    }
+    .right-side {
+      @include flexmain($flex-direction: column);
+      gap: 30px;
+      margin-left: 100px;
+      h2 {
+        font-size: 30px;
+        text-shadow: 1px 1px 5px #fa9a8c;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        div {
+          display: flex;
+          gap: 20px;
+          input,
+          select {
+            width: 250px;
+            padding: 20px;
+            border: none;
+            font-size: 16px;
+          }
+        }
+        textarea {
+          padding: 10px 20px;
+          border: none;
+          height: 100px;
+          font-size: 16px;
+        }
+      }
     }
   }
 }
