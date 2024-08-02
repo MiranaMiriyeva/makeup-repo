@@ -5,10 +5,10 @@ import Header from './components/Header'
 import './App.css';
 import Footer from './components/Footer'
 import About from './Pages/About'
-import Services from './Pages/Home'
 import Shop from './Pages/Shop'
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
+import Services from './Pages/Services';
 
 
 

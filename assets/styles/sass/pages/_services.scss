@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/extends" as *;
+@use "../abstracts/mixin" as *;
+
+#services {
+  padding-top: 80px;
+  .box {
+    margin: 100px 0;
+    display: flex;
+    padding: 0 100px;
+    gap: 60px;
+
+    .details {
+      background: url("https://preview.colorlib.com/theme/makeupartist/img/about/about-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 45%;
+      span {
+        font-size: 16px;
+        color: #fa9a8c;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      h2 {
+        color: #200204;
+        font-weight: 500;
+        margin-bottom: 40px;
+        font-size: 40px;
+      }
+      p {
+        color: #200204;
+        line-height: 30px;
+        margin-bottom: 20px;
+        i {
+          color: #fa9a8c;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  .images {
+    .img1 {
+      width: 330px;
+      height: 450px;
+      margin-right: 30px;
+      object-fit: cover;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .img2 {
+      width: 280px;
+      height: 350px;
+      margin-bottom: 25px;
+      object-fit: cover;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+}

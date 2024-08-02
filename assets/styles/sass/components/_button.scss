@@ -25,26 +25,41 @@ header button:hover {
 .home #about-artist .text button:hover::before {
   left: 100%;
 }
-.home #about-artist .text button:hover {
+ #about-artist .text button:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
-.home #contact .right-side{
-  .book{
+ #contact .right-side {
+  .book {
     @extend %buttons;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5) !important;
-   
-   }
-   .book::before{
-  
-      @extend %buttons-before;
-     
-   }
+  }
+  .book::before {
+    @extend %buttons-before;
+  }
 }
-.home #contact .right-side .book:hover::before {
+ #contact .right-side .book:hover::before {
   left: 100%;
 }
-.home #contact .right-side .book:hover {
+ #contact .right-side .book:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#services .box .details button {
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: #FA9A8C 1px solid ;
+  background-color: #fff;
+  font-size: 22px;
+  color: #FA9A8C;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s linear;
+}
+
+#services .box .details button:hover {
+  color: #fff;
+  background-color: #FA9A8C;
+  transform: scale(1.1);
 }
