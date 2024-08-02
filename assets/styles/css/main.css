@@ -631,6 +631,7 @@ header button::before, .home #about-artist .text button::before, #contact .right
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin-top: 50px;
+  margin-left: 150px;
 }
 .home #products .container .box {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
