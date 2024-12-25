@@ -18,11 +18,11 @@ header {
     font-size: 25px;
     gap: 40px;
     a {
-      color: #000;
+      color: #fff;
       font-weight: 700;
       position: relative;
       // text-shadow: 1px 1px 10px rgba(0, 0, 0);
-      // text-shadow: 1px 1px 5px #fa9a8c;
+      text-shadow: 1px 1px 2px #000;
     }
     a::after {
       content: "";

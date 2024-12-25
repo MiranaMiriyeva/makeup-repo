@@ -1,4 +1,9 @@
-import { faFacebook, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import { faHeart, faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -8,6 +13,13 @@ const Home = () => {
   return (
     <div className="home">
       <section id="hero-section">
+        <video
+          autoPlay
+          loop
+          // controls
+          muted
+          src="../../../assets/img/Dior Addict - The New Icon of Shine.mov"
+        ></video>
         <div className="text animate-slide-in">
           <h1>Discover Your Beauty</h1>
           <p>Pamper Yourself with Our Professional Services and </p>
@@ -139,8 +151,8 @@ const Home = () => {
             <p className="name">KIKO Creamy Lipstick</p>
             <p className="price">$25.0</p>
             <div className="icons">
-            <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
-            <FontAwesomeIcon className="icon" icon={faHeart} /> 
+              <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
+              <FontAwesomeIcon className="icon" icon={faHeart} />
             </div>
           </div>
 
@@ -153,8 +165,8 @@ const Home = () => {
             <p className="name">KIKO Eyeshadow Plaette</p>
             <p className="price">$20.0</p>
             <div className="icons">
-            <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
-            <FontAwesomeIcon className="icon" icon={faHeart} /> 
+              <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
+              <FontAwesomeIcon className="icon" icon={faHeart} />
             </div>
           </div>
 
@@ -167,8 +179,8 @@ const Home = () => {
             <p className="name">KIKO Volume Mascara</p>
             <p className="price">$18.0</p>
             <div className="icons">
-            <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
-            <FontAwesomeIcon className="icon" icon={faHeart} /> 
+              <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
+              <FontAwesomeIcon className="icon" icon={faHeart} />
             </div>
           </div>
 
@@ -181,8 +193,8 @@ const Home = () => {
             <p className="name">KIKO Powder Foundation</p>
             <p className="price">$20.0</p>
             <div className="icons">
-            <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
-            <FontAwesomeIcon className="icon" icon={faHeart} /> 
+              <FontAwesomeIcon className="icon" icon={faShoppingBasket} />
+              <FontAwesomeIcon className="icon" icon={faHeart} />
             </div>
           </div>
         </div>
@@ -193,7 +205,8 @@ const Home = () => {
         <h2>MAKEUP ARTIST TIPS</h2>
         <p className="tips-heading">Makeup artist tips</p>
         <div className="tips-container">
-          <Link className="box"
+          <Link
+            className="box"
             to={
               "https://www.youtube.com/watch?v=H01k32xOb9s&pp=ygULbWFrZXVwIHRpcHM%3D"
             }
@@ -210,7 +223,8 @@ const Home = () => {
 
             <FontAwesomeIcon className="yt-icon" icon={faYoutube} />
           </Link>
-          <Link className="box"
+          <Link
+            className="box"
             to={
               "https://www.youtube.com/watch?v=H01k32xOb9s&pp=ygULbWFrZXVwIHRpcHM%3D"
             }
@@ -228,7 +242,8 @@ const Home = () => {
             <FontAwesomeIcon className="yt-icon" icon={faYoutube} />
           </Link>
 
-          <Link className="box"
+          <Link
+            className="box"
             to={
               "https://www.youtube.com/watch?v=H01k32xOb9s&pp=ygULbWFrZXVwIHRpcHM%3D"
             }
@@ -257,21 +272,21 @@ const Home = () => {
           <form>
             <div>
               <input type="text" placeholder="Name" required />
-              <input type="number" placeholder="Phone number"  required/>
+              <input type="number" placeholder="Phone number" required />
             </div>
             <div>
               <input type="email" placeholder="Email" required />
-              <select required> 
+              <select required>
                 <option value="Makeup">Makeup</option>
                 <option value="Hair">Hair</option>
                 <option value="Other">Other</option>
-            </select>
+              </select>
             </div>
             <textarea placeholder="Your message"></textarea>
           </form>
           <button className="book">Book</button>
         </div>
-    </section>
+      </section>
     </div>
   );
 };
